@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Redes y Soluciones tu mejor opción</title>
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+  <!-- Link Bootstrap's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+
+  <!-- nav bar start  -->
+  <header id="nav" class="site-header position-fixed text-white bg-dark">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
+
+      <div class="container ">
+
+        <a class="navbar-brand" href="./index.html"><img src="images/LogoR.png" alt="image"></a>
+
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon
+            name="menu-outline" style="font-size: 30px;"></ion-icon></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1 ">
+              <li class="nav-item">
+                <a class="nav-link active me-md-4" href="#billboard">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#about-us">Plan de negocio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#help">Categorías</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar Sesión</a>
+              </li>
+            
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="tabs-listing mt-4">
+                                  <nav>
+                                      <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
+                                          <button class="btn btn-outline-primary text-uppercase me-3 active" id="nav-sign-in-tab"
+                                              data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab"
+                                              aria-controls="nav-sign-in" aria-selected="true">Iniciar Sesión</button>
+                                          <button class="btn btn-outline-primary text-uppercase" id="nav-register-tab"
+                                              data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab"
+                                              aria-controls="nav-register" aria-selected="false">Registrarse</button>
+                                      </div>
+                                  </nav>
+                                  <div class="tab-content" id="nav-tabContent">
+                                      <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel"
+                                          aria-labelledby="nav-sign-in-tab">
+                                          <form id="form1" class="form-group flex-wrap p-3">
+                                              <div class="form-input col-lg-12 my-4">
+                                                  <label for="exampleInputEmail1"
+                                                      class="form-label fs-6 text-uppercase fw-bold text-black">Correo
+                                                      Electrónico</label>
+                                                  <input type="text" id="exampleInputEmail1" name="email" placeholder="Correo Electrónico"
+                                                      class="form-control ps-3">
+                                              </div>
+                                              <div class="form-input col-lg-12 my-4">
+                                                  <label for="inputPassword1"
+                                                      class="form-label fs-6 text-uppercase fw-bold text-black">Contraseña</label>
+                                                  <input type="password" id="inputPassword1" placeholder="Contraseña"
+                                                      class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                                  <div id="passwordHelpBlock" class="form-text text-center">
+                                                      <a href="#" class="password">¿Olvidaste tu contraseña?</a>
+                                                  </div>
+                                              </div>
+                                              <label class="py-3">
+                                                  <input type="checkbox" required class="d-inline">
+                                                  <span class="label-body text-black">Recuérdame</span>
+                                              </label>
+                                              <div class="d-grid my-3">
+                                                  <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">
+                                                      Iniciar Sesión
+                                                  </button>
+                                              </div>
+                                          </form>
+                                      </div>
+                                      <div class="tab-pane fade" id="nav-register" role="tabpanel"
+                                          aria-labelledby="nav-register-tab">
+                                          <form id="form2" class="form-group flex-wrap p-3">
+                                              <div class="form-input col-lg-12 my-4">
+                                                  <label for="exampleInputEmail2"
+                                                      class="form-label fs-6 text-uppercase fw-bold text-black">Correo
+                                                      Electrónico</label>
+                                                  <input type="text" id="exampleInputEmail2" name="email" placeholder="Correo Electrónico"
+                                                      class="form-control ps-3">
+                                              </div>
+                                              <div class="form-input col-lg-12 my-4">
+                                                  <label for="inputPassword2"
+                                                      class="form-label fs-6 text-uppercase fw-bold text-black">Contraseña</label>
+                                                  <input type="password" id="inputPassword2" placeholder="Contraseña"
+                                                      class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                              </div>
+                                              <label class="py-3">
+                                                  <input type="checkbox" required class="d-inline">
+                                                  <span class="label-body text-black">Acepto la <a href="#" class="text-black password border-bottom">Política de Privacidad</a></span>
+                                              </label>
+                                              <div class="d-grid my-3">
+                                                  <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">
+                                                      Registrarse
+                                                  </button>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+              <li class="nav-item">
+                <a class="btn-medium btn btn-primary" href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal2">Registrarse</a>
+              </li>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="tabs-listing mt-4">
+                        <nav>
+                          <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab2" role="tablist">
+                            <button class="btn btn-outline-primary text-uppercase me-4 " id="nav-sign-in-tab2"
+                              data-bs-toggle="tab" data-bs-target="#nav-sign-in2" type="button" role="tab"
+                              aria-controls="nav-sign-in2" aria-selected="false">Iniciar Sesión</button>
+                            <button class="btn btn-outline-primary text-uppercase active" id="nav-register-tab2"
+                              data-bs-toggle="tab" data-bs-target="#nav-register2" type="button" role="tab"
+                              aria-controls="nav-register2" aria-selected="true">Registrarse</button>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent1">
+                          <div class="tab-pane fade " id="nav-sign-in2" role="tabpanel"
+                            aria-labelledby="nav-sign-in-tab2">
+                            <form id="form3" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail3"
+                                  class="form-label fs-6 text-uppercase fw-bold text-black">Correo Electrónico</label>
+                                <input type="text" id="exampleInputEmail3" name="email" placeholder="Email"
+                                  class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword3"
+                                  class="form-label fs-6 text-uppercase fw-bold text-black">Contraseña</label>
+                                <input type="password" id="inputPassword3" placeholder="Password"
+                                  class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                                <div id="passwordHelpBlock2" class="form-text text-center">
+                                  <a href="#" class="password">¿Olvidaste tu contraseña?</a>
+                                </div>
+
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">Recordarme</span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Iniciar 
+                                  Sesión</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade active show" id="nav-register2" role="tabpanel"
+                            aria-labelledby="nav-register-tab2">
+                            <form id="form4" class="form-group flex-wrap p-3 ">
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="exampleInputEmail4"
+                                  class="form-label fs-6 text-uppercase fw-bold text-black">Correo 
+                                  Electrónico</label>
+                                <input type="text" id="exampleInputEmail4" name="email" placeholder="Email"
+                                  class="form-control ps-3">
+                              </div>
+                              <div class="form-input col-lg-12 my-4">
+                                <label for="inputPassword4"
+                                  class="form-label fs-6 text-uppercase fw-bold text-black">Contraseña</label>
+                                <input type="password" id="inputPassword4" placeholder="Password"
+                                  class="form-control ps-3" aria-describedby="passwordHelpBlock">
+                              </div>
+                              <label class="py-3">
+                                <input type="checkbox" required="" class="d-inline">
+                                <span class="label-body text-black">Acepto la <a href="#" 
+                                  class="text-black password border-bottom">Política de Privacidad</a>
+                                </span>
+                              </label>
+                              <div class="d-grid my-3">
+                                <button
+                                  class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Registrarse</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- billboard start  -->
+  <section id="billboard">
+    <div class="container ">
+      <div class="row flex-lg-row-reverse align-items-center ">
+
+        <div class="col-lg-6">
+          <img src="images/Redes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy">
+        </div>
+
+        <div class="col-lg-6">
+          <h1 class=" text-capitalize  lh-1 my-3">Redes y Soluciones Tu mejor opción</h1>
+          <p>En <b>Redes y Soluciones</b>, somos un equipo comprometido con ofrecer las mejores soluciones tecnológicas en redes y conectividad. Nos enfocamos en entender las necesidades de cada cliente para ofrecer servicios personalizados y de alta calidad.</p>
+            <p>Nuestro objetivo es facilitar la integración digital y mejorar la eficiencia operativa mediante herramientas tecnológicas de vanguardia.</p>
+          <p class="lead">Conectamos tus ideas para transformar tu mundo.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About us start  -->
+  <section id="about-us">
+    <div class="container">
+      <div class="row py-lg-5">
+
+        <h2 class="text-capitalize text-center m-0 py-lg-5">Plan de negocio</h2>
+
+        <div class="text-center col-lg-4">
+          <img src="images/mision2.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+            height="140" loading="lazy">
+          <h4 class="fw-normal mt-5 ">Misión</h4>
+          <p>Ofrecer soluciones tecnológicas integrales y personalizadas que optimicen los procesos empresariales de nuestros clientes, 
+            enfocándonos en redes y conectividad, seguridad informática, automatización, infraestructura tecnológica y consultoría especializada. 
+            Nuestro compromiso es brindar soporte y servicios de alta calidad que impulsen la transformación digital y el crecimiento de las organizaciones.</p>
+        </div>
+
+        <div class="text-center col-lg-4">
+          <img src="images/vision.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+            height="140" loading="lazy">
+          <h4 class="fw-normal mt-5">Visión</h4>
+          <p>Ser una empresa referente en soluciones tecnológicas y servicios de consultoría, reconocida por nuestra capacidad de innovación, 
+            compromiso con la seguridad y calidad en la ejecución de proyectos que transforman y potencian a nuestros clientes en un 
+            entorno digital en constante evolución.</p>
+        </div>
+
+        <div class="text-center col-lg-4">
+          <img src="images/valores.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+            height="140" loading="lazy">
+          <h4 class="fw-normal mt-5 ">Valores</h4>
+          
+          
+            <ul class="category-list">
+              <li>Innovación:
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Promovemos la creatividad y la búsqueda constante de soluciones avanzadas que impulsen la evolución tecnológica.</a></li>
+                </ul>
+              </li>
+              
+              <li>Compromiso:
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nos comprometemos a cumplir con los estándares de calidad y con las expectativas de nuestros clientes.</a></li>
+                </ul>
+              </li>
+              
+              <li>Transparencia:
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Fomentamos relaciones de confianza a través de una comunicación abierta y honesta.</a></li>
+                </ul>
+              </li>
+
+              <li>Calidad:
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Ofrecemos servicios de alta calidad, garantizando un enfoque preciso y eficiente en cada proyecto.</a></li>
+                </ul>
+              </li>
+              
+              <li>Responsabilidad:
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Actuamos con ética y responsabilidad en cada aspecto de nuestro trabajo, velando por la seguridad y bienestar de nuestros clientes.</a></li>
+                </ul>
+              </li>
+              
+              <li>Adaptabilidad:
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nos adaptamos a los cambios y desafíos tecnológicos para ofrecer soluciones relevantes y efectivas.</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Help start  -->
+  <section id="help" class="py-5"
+    style="background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <div class="container-lg my-5">
+
+      <div class="row d-flex justify-content-between align-items-center">
+
+        <div class="col-md-6">
+          <div class="image-holder d-flex">
+            <img src="images/imagen6.png" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-holder d-flex">
+            <img src="images/imagen4.jpeg" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+            <img src="images/imagen3.jpeg" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="col-md-12 text-content">
+            <h2 class="text-capitalize text-center m-0 py-lg-5">Categorías de experiencia</h2>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="category-list">
+                  <li>Redes y Conectividad
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Diseño de Redes</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Implementación de Conectividad</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Gestión de Redes</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Soporte de Conectividad</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li>Soluciones Empresariales
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Servicios de Red</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Optimización de Recursos</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Escalabilidad</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li>Infraestructura Tecnológica
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Servidores y Almacenamiento</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Redes Locales y WAN</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Virtualización</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="col-md-6">
+                <ul class="category-list">
+                  <li>Seguridad Informática
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Firewall y Protección de Red</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Auditorías de Seguridad</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Plan de Respuesta a Incidentes</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li>Automatización de Procesos
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Integración de Sistemas</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Optimización de Flujos de Trabajo</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Monitoreo Automático</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li>Consultoría y Soporte
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Evaluación de Infraestructura</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Asesoría en Proyectos de Red</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Soporte Técnico 24/7</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-12 text-content text-center m-0 py-lg-5">
+              <p>Para más información, contáctanos</p>
+              <a href="index.html" class="btn btn-primary btn-lg">Información</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Footer start  -->
+  <section id="footer">
+    <div class="container footer-container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5  ">
+
+        <div class=" col-md-4">
+          <h3><img src="images/LogoR.png" alt="image"></h3>
+          <p>En la actualidad, la conectividad es fundamental para el éxito de cualquier empresa. 
+            Ofrecemos soluciones integrales que aseguran la interconexión eficiente y segura de todos los dispositivos.</p>
+          <i class="bi-facebook pe-4"></i>
+          <i class="bi-instagram pe-4"></i>
+          <i class="bi-twitter pe-4"></i>
+          <i class="bi-youtube pe-4"></i>
+        </div>
+
+        <div class="col-md-2 ">
+          <h5>Empresa</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">¿Cómo trabajamos?</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Capital</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Seguridad</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-2 ">
+          <h5>Movimiento</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Movimiento</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Apóyanos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Precios</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-2 ">
+          <h5>Ayuda</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Privacidad</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Condiciones</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Blog</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+      </footer>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 ">
+        <div class="col-md-8 d-flex align-items-center">
+          <p>© 2024 TemplatesJungle, Inc. All rights reserved.</p>
+
+        </div>
+        
+
+      </footer>
+    </div>
+  </section>
+
+
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
